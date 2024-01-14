@@ -1,0 +1,69 @@
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex" />
+<meta name="referrer" content="no-referrer">
+<style type="text/css">
+
+body {
+   margin: 0;
+   padding: 0;
+}
+</style>
+</head>
+<script type="text/javascript">
+  function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
+    var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
+
+  var getURL = getParameterByName('get');
+  var getIMG = getParameterByName('img');
+  var getKEY  = getParameterByName('key');
+  var getKEY2  = getParameterByName('key2');
+  if (getURL == "#") {alert('Vuelve a la página anterior');}
+
+
+</script>
+<script src='https://content.jwplatform.com/libraries/KB5zFt7A.js'></script>
+<script> jwplayer.key='XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';</script>
+<body>
+
+<div id="player"></div>
+<script type="text/javascript">
+  var referrer =  document.referrer;
+   if((referrer.indexOf("sinfutboltv.com") > -1) || /iPad|iPod|BlackBerry|IEMobile|webOS|Opera Mini/i.test(navigator.userAgent)) {
+var playerInstance=jwplayer("player");
+
+playerInstance.setup({
+
+    playlist: [{
+    "title": "",
+    "description": "",
+    "image": getIMG,
+      "sources": [
+        {
+          "default": false,
+          "type": "dash",
+          "file": getURL,
+          "drm": {
+            "clearkey": {"keyId": getKEY, "key": getKEY2}
+          },
+          "label": "0"
+        }
+      ]
+    }],
+    width: "100%",
+    height: "100%",
+    aspectratio: "16:9",
+    autostart: false,
+    cast: {},
+    sharing: {}
+});
+        }
+        eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('(3(){(3 a(){8{(3 b(2){7((\'\'+(2/2)).6!==1||2%5===0){(3(){}).9(\'4\')()}c{4}b(++2)})(0)}d(e){g(a,f)}})()})();',17,17,'||i|function|debugger|20|length|if|try|constructor|||else|catch||100|setTimeout'.split('|'),0,{}))
+     document.oncontextmenu = function(){return false}
+</script>
+</html>
+  <script>if(window==window.top){window.location.replace("https://google.com/");}</script>
