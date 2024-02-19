@@ -91,7 +91,7 @@ document.write('<iframe id="iframe" allow="encrypted-media" width="100%" height=
       if (xhttp.readyState == 4 && xhttp.status == 200) {
         var data = JSON.parse(xhttp.responseText);
         var url = data["url"];
-        var iframeSrc = '//' + url + "/jwtn.php?get=" + getVal + lang;
+        var iframeSrc = '//' + url + "/jwtngb.php?get=" + getVal + lang;
         document.getElementById('iframe').src = iframeSrc;
       }
     }
@@ -110,7 +110,7 @@ document.write('<iframe id="iframe" allow="encrypted-media" width="100%" height=
       if (xhttp.readyState == 4 && xhttp.status == 200) {
         var data = JSON.parse(xhttp.responseText);
         var url = data["url"];
-        var iframeSrc = '//' + url + "/jwtngb.html?get=" + getVal + lang;
+        var iframeSrc = '//' + url + "/jwtn.html?get=" + getVal + lang;
         document.getElementById('iframe').src = iframeSrc;
       }
     }
