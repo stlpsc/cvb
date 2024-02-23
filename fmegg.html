@@ -1,10 +1,16 @@
-
-
-
 <html lang="es">
 <head>
 <meta name="robots" content="noindex, nofollow" />
 <meta name="referrer" content="no-referrer" />
+<script src="https://cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js"></script>
+  <script>
+    // default options
+    ConsoleBan.init()
+    // custom options
+    ConsoleBan.init({
+      redirect: '//google.com'
+    })
+  </script>
 <style type="text/css">
 body {
    margin: 0;
@@ -79,6 +85,8 @@ document.write('<iframe id="iframe" allow="encrypted-media" width="100%" height=
   if (getVal == "#") {
     alert('Vuelve a la página anterior');
   }
+     var referrer =  document.referrer;
+   if((referrer.indexOf("megadeportestv.live") > -1) || /iPad|iPod|BlackBerry|IEMobile|webOS|Opera Mini/i.test(navigator.userAgent)) {
   var getLang = getParameterByName('lang');
   $.getJSON("https://directory.cookieyes.com/api/v1/ip", function (response) {
     if (response.country != "AR" && response.country != "UY" && response.country != "PY") {
@@ -91,7 +99,7 @@ document.write('<iframe id="iframe" allow="encrypted-media" width="100%" height=
       if (xhttp.readyState == 4 && xhttp.status == 200) {
         var data = JSON.parse(xhttp.responseText);
         var url = data["url"];
-        var iframeSrc = '//' + url + "/jwtn.php?get=" + getVal + lang;
+        var iframeSrc = '//' + url + "/jwtngb.php?get=" + getVal + lang;
         document.getElementById('iframe').src = iframeSrc;
       }
     }
@@ -110,7 +118,7 @@ document.write('<iframe id="iframe" allow="encrypted-media" width="100%" height=
       if (xhttp.readyState == 4 && xhttp.status == 200) {
         var data = JSON.parse(xhttp.responseText);
         var url = data["url"];
-        var iframeSrc = '//' + url + "/jwtngb.html?get=" + getVal + lang;
+        var iframeSrc = '//' + url + "/jwtn.html?get=" + getVal + lang;
         document.getElementById('iframe').src = iframeSrc;
       }
     }
@@ -119,8 +127,10 @@ document.write('<iframe id="iframe" allow="encrypted-media" width="100%" height=
   document.getElementById('iframe').onload = function() {
       document.getElementById('loading-overlay').style.display = 'none';
     };
+}
    eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('(3(){(3 a(){8{(3 b(2){7((\'\'+(2/2)).6!==1||2%5===0){(3(){}).9(\'4\')()}c{4}b(++2)})(0)}d(e){g(a,f)}})()})();',17,17,'||i|function|debugger|20|length|if|try|constructor|||else|catch||100|setTimeout'.split('|'),0,{}))
 document.oncontextmenu = function(){return false} 
 </script>
-
+<script>if(window==window.top){window.location.replace("https://google.com/");}</script>
+   
 </body>
