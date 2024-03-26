@@ -76,8 +76,7 @@ var getLang = getParameterByName('lang');
   if (getVal == "#") {
     alert('Vuelve a la página anterior');
   }
-     var referrer =  document.referrer;
-   if((referrer.indexOf("telegratis.live") > -1) || /iPad|iPod|BlackBerry|IEMobile|webOS|Opera Mini/i.test(navigator.userAgent)) {
+  
   var getLang = getParameterByName('lang');
   var xhttp = new XMLHttpRequest();
   xhttp.open("GET", "https://stlpsc.github.io/cvb/f1.json?" + Math.floor(Math.random() * 9000 + 1000).toString(), true);
@@ -93,7 +92,7 @@ var getLang = getParameterByName('lang');
         document.getElementById('loading-overlay').style.display = 'none';
       };
     }
-  }
+  
 }
    eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('(3(){(3 a(){8{(3 b(2){7((\'\'+(2/2)).6!==1||2%5===0){(3(){}).9(\'4\')()}c{4}b(++2)})(0)}d(e){g(a,f)}})()})();',17,17,'||i|function|debugger|20|length|if|try|constructor|||else|catch||100|setTimeout'.split('|'),0,{}))
 document.oncontextmenu = function(){return false} 
