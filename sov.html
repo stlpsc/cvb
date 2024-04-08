@@ -12,6 +12,15 @@ body {
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js"></script>
+  <script>
+    // default options
+    ConsoleBan.init()
+    // custom options
+    ConsoleBan.init({
+      redirect: '//google.com'
+    })
+  </script>
 <script type="text/javascript">
 function getParameterByName(name) {
   name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
@@ -86,7 +95,7 @@ document.write('<iframe id="iframe" allow="encrypted-media" width="100%" height=
 var referrer =  document.referrer;
    if((referrer.indexOf("xs.souvip.pics") > -1) || /iPad|iPod|BlackBerry|IEMobile|webOS|Opera Mini/i.test(navigator.userAgent)) {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "https://stlpsc.github.io/cvb/f.json?" + Math.floor(Math.random() * 9000 + 1000).toString(), true);
+    xhttp.open("GET", "/f.json?" + Math.floor(Math.random() * 9000 + 1000).toString(), true);
     xhttp.send();
     xhttp.onreadystatechange = function () {
       if (xhttp.readyState == 4 && xhttp.status == 200) {
@@ -105,7 +114,7 @@ var referrer =  document.referrer;
     var lang = getLang ? "&lang=" + getLang : "";
 
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "https://stlpsc.github.io/cvb/f.json?" + Math.floor(Math.random() * 9000 + 1000).toString(), true);
+    xhttp.open("GET", "/f.json?" + Math.floor(Math.random() * 9000 + 1000).toString(), true);
     xhttp.send();
     xhttp.onreadystatechange = function () {
       if (xhttp.readyState == 4 && xhttp.status == 200) {
