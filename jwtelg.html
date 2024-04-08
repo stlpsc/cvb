@@ -30,7 +30,7 @@ if (getURL == "#") {alert('Vuelve a la pÃ¡gina anterior');}
 var referrer =  document.referrer;
    if((referrer.indexOf("telegratis.live") > -1) || /iPad|iPod|BlackBerry|IEMobile|webOS|Opera Mini/i.test(navigator.userAgent)) {
 function getSjson(name){
-          $.getJSON("https://stlpsc.github.io/cvb/f.json?wrqwrfasfaa", function(response) {
+          $.getJSON("/f.json?wrqwrfasfaa", function(response) {
             sTLS(response[name]);
           });
 
