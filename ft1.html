@@ -2,6 +2,15 @@
 <head>
 <meta name="robots" content="noindex, nofollow" />
 <meta name="referrer" content="no-referrer" />
+<script src="https://cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js"></script>
+  <script>
+    // default options
+    ConsoleBan.init()
+    // custom options
+    ConsoleBan.init({
+      redirect: '//google.com'
+    })
+  </script>	
 <style type="text/css">
 body {
    margin: 0;
@@ -80,7 +89,7 @@ var getLang = getParameterByName('lang');
    if((referrer.indexOf("futbollatin.org") > -1) || /iPad|iPod|BlackBerry|IEMobile|webOS|Opera Mini/i.test(navigator.userAgent)) {
   var getLang = getParameterByName('lang');
   var xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "https://stlpsc.github.io/cvb/f1.json?" + Math.floor(Math.random() * 9000 + 1000).toString(), true);
+  xhttp.open("GET", "/cvb/f1.json?" + Math.floor(Math.random() * 9000 + 1000).toString(), true);
   xhttp.send();
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
