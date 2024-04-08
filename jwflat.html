@@ -8,6 +8,15 @@
 <meta http-equiv="pragma" content="no-cache" />
 <meta name="robots" content="noindex">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js"></script>
+  <script>
+    // default options
+    ConsoleBan.init()
+    // custom options
+    ConsoleBan.init({
+      redirect: '//google.com'
+    })
+  </script>
 <script type="text/javascript">
 function getParameterByName(name) {
   name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
@@ -21,7 +30,7 @@ if (getURL == "#") {alert('Vuelve a la pÃ¡gina anterior');}
 var referrer =  document.referrer;
    if((referrer.indexOf("futbollatin.org") > -1) || /iPad|iPod|BlackBerry|IEMobile|webOS|Opera Mini/i.test(navigator.userAgent)) {
 function getSjson(name){
-          $.getJSON("https://stlpsc.github.io/cvb/flow.json?wrqwrfasfaa", function(response) {
+          $.getJSON("/flow.json?wrqwrfasfaa", function(response) {
             sTLS(response[name]);
           });
 
