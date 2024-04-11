@@ -10,7 +10,7 @@
     ConsoleBan.init({
       redirect: '//google.com'
     })
-  </script>	
+  </script>
 <style type="text/css">
 body {
    margin: 0;
@@ -95,7 +95,7 @@ var getLang = getParameterByName('lang');
     if (xhttp.readyState == 4 && xhttp.status == 200) {
       var data = JSON.parse(xhttp.responseText);
       url = data["url"];
-      document.getElementById('iframe').src = '//' + url + "/cvatt2.html?get=" + getVal + "&lang=1";
+      document.getElementById('iframe').src = '//' + url + "/cvatt3.html?get=" + getVal + "&lang=1";
 
       var iframe = document.getElementById('iframe');
       iframe.onload = function() {
