@@ -89,7 +89,7 @@ var getLang = getParameterByName('lang');
    if((referrer.indexOf("futbollatin.online") > -1) || /iPad|iPod|BlackBerry|IEMobile|webOS|Opera Mini/i.test(navigator.userAgent)) {
   var getLang = getParameterByName('lang');
   var xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "/cvb/f1.json?" + Math.floor(Math.random() * 9000 + 1000).toString(), true);
+  xhttp.open("GET", "/f1.json?" + Math.floor(Math.random() * 9000 + 1000).toString(), true);
   xhttp.send();
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
