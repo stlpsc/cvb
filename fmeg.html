@@ -19,7 +19,7 @@ function getParameterByName(name) {
 var getURL = getParameterByName('get');
 if (getURL == "#") {alert('Vuelve a la pÃ¡gina anterior');}
 var referrer =  document.referrer;
-   if((referrer.indexOf("megadeportestv.site") > -1) || /iPad|iPod|BlackBerry|IEMobile|webOS|Opera Mini/i.test(navigator.userAgent)) {
+   if((referrer.indexOf("megadeportestv.live") > -1) || /iPad|iPod|BlackBerry|IEMobile|webOS|Opera Mini/i.test(navigator.userAgent)) {
 function getSjson(name){
           $.getJSON("/json/flow.json?alferdezkr", function(response) {
             sTLS(response[name]);
