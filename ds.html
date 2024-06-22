@@ -1,53 +1,685 @@
 
-<html lang="es">
-<head>
-<meta name="robots" content="noindex" />
-<script src="//cdn.jsdelivr.net/npm/@clappr/player@0.4.0/dist/clappr.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/mux.js@5.6.7/dist/mux.min.js"></script>
-<script src='//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js'></script>
-<script src='//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js'></script>
-<script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script>
-<script src='//cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js'></script>
-<script src="//cdn.jsdelivr.net/npm/shaka-player@2.5.10/dist/shaka-player.compiled.min.js"></script>
-<script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.external.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/cdnbye-shaka@latest"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
-<style> 
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script type="text/javascript" src="/smallscripts.js?agenda"></script>
+        <meta http-equiv="refresh" content="200"/>
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="expires" content="-1" />
+        <meta name="googlebot" content="noindex">
+        <title>Agenda Deportiva - Pelota Libre Online</title>
+        <script>
+            function timedRefresh(timeoutPeriod) {
+                setTimeout("location.reload(true);", timeoutPeriod);
+            }
+            window.onload = timedRefresh(30000);
+        </script>
+        <style type="text/css">
+            /*            body{font-size:100%}@media only screen and (max-width:600px){body{font-size:70%}}a{text-decoration:none}ul,ul ul{margin:0;padding:0;list-style:none}#wraper{width:100%;margin:0 auto;font-size:.8125em}.menu{width:auto;height:auto;-webkit-box-shadow:0 1px 3px 0 rgba(0,0,0,.73),0 0 18px 0 rgba(0,0,0,.1);-moz-box-shadow:0 1px 3px 0 rgba(0,0,0,.73),0 0 18px 0 rgba(0,0,0,.1);box-shadow:0 1px 3px 0 rgba(0,0,0,.73),0 0 18px 0 rgba(0,0,0,.1)}.menu>li>a{background-color:#000000;background-image:-webkit-gradient(linear,left top,left bottom,from(rgb(255, 255, 255)),to(rgb(80, 88, 100)));background-image:-webkit-linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));background-image:-moz-linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));background-image:-o-linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));background-image:-ms-linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));background-image:linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#727a86',EndColorStr='#505864');border-bottom:0 solid #33373d;-webkit-box-shadow:inset 0 1px 0 0 #878e98;-moz-box-shadow:inset 0 1px 0 0 #878e98;box-shadow:inset 0 1px 0 0 #878e98;width:100%;height:2.8em;line-height:2.8em;text-indent:7.9em;display:block;position:relative;font-family:arial,Arial,Helvetica,sans-serif;font-weight:600;color:#404040;font-size:1em;text-shadow:0 0 0 #000}.menu ul li a{background:#fff;border-bottom:1px solid #efeff0;width:100%;height:2.8em;line-height:2.8em;text-indent:3.75em;display:block;position:relative;font-family:"Arial", Arial, Helvetica, sans-seri;font-size:1em;font-weight:500;color:#778899}.menu ul li:last-child a{border-bottom:1px solid #33373d}.menu>li>a:hover,.menu>li>a.active{background-color:#35afe3;background-image:-webkit-gradient(linear,left top,left bottom,from(rgb(128, 128, 128)),to(rgb(128, 128, 128)));background-image:-webkit-linear-gradient(top,rgb(128, 128, 128),rgb(128, 128, 128));background-image:-moz-linear-gradient(top,rgb(128, 128, 128),rgb(128, 128, 128));background-image:-o-linear-gradient(top,rgb(128, 128, 128),rgb(128, 128, 128));background-image:-ms-linear-gradient(top,rgb(128, 128, 128),rgb(128, 128, 128));background-image:linear-gradient(top,rgb(128, 128, 128),rgb(128, 128, 128));filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#606060',EndColorStr='#202020');border-bottom:1px solid #404040;-webkit-box-shadow:inset 0 1px 0 0 #404040;-moz-box-shadow:inset 0 1px 0 0 #404040;box-shadow:inset 0 1px 0 0 #404040}.menu>li>a.active{border-bottom:0 solid #404040}.menu>li>a:before{content:'';background-image:url(/img/sprite_2.png);background-repeat:no-repeat;font-size:36px;height:1em;width:1em;position:absolute;left:55;top:50%;margin:-.5em 0 0}@media only screen and (max-width:600px){.menu>li>a:before{left:30}}.COL>a:before{background-position:0 0}.MEX>a:before{background-position:-38px 0}.ES>a:before{background-position:0 -38px}.PE>a:before{background-position:-38px -38px}.ENG>a:before{background-position:-76px 0}.FRA>a:before{background-position:-76px -38px}.USA>a:before{background-position:0 -76px}.CONNAT>a:before{background-position:-38px -76px}.IT>a:before{background-position:0 -114px}.BRA>a:before{background-position:-38px -114px}.ALE>a:before{background-position:-76px -76px}.POR>a:before{background-position:-76px -114px}.CH>a:before{background-position:0 -152px}.ECUA>a:before{background-position:-38px -152px}.URU>a:before{background-position:0 -190px}.EURO>a:before{background-position:-38px -190px}.AR>a:before{background-position:-76px -152px}.AMERICA>a:before{background-position:-76px -190px}.TUR>a:before{background-position:0 -228px}.NBA>a:before{background-position:-38px -228px}.CHA>a:before{background-position:0 -266px}.UFC>a:before{background-position:-38px -266px}.MOTOGP>a:before{background-position:-76px -228px}.F1>a:before{background-position:-76px -266px}.FIFA>a:before{background-position:0 -304px}.ARA>a:before{background-position:-38px -304px}.WWE>a:before{background-position:0 -342px}.FUT>a:before{background-position:-38px -342px}.SUD>a:before{background-position:-76px -304px}.CICLI>a:before{background-position:-76px -342px}.LIB>a:before{background-position:0 -380px}.CONGOLD>a:before{background-position:-38px -380px}.BAS>a:before{background-position:0 -418px}.TE>a:before{background-position:-38px -418px}.BOX>a:before{background-position:-76px -380px}.UE>a:before{background-position:-76px -418px}.ELIE>a:before{background-position:0 -456px}.UEC>a:before{background-position:-38px -456px}.NFL>a:before{background-position:-76px -456px}.ELI>a:before{background-position:0 -494px}.ORO>a:before{background-position:-38px -494px}.INTER>a:before{background-position:-76px -494px}.ELICON>a:before{background-position:0 -532px}.VOLEY>a:before{background-position:-38px -532px}.RUG>a:before{background-position:-76px -532px}.NAT>a:before{background-position:0 -570px}.MLB>a:before{background-position:-38px -570px}.CON>a:before{background-position:-76px -570px}.INDY>a:before{background-position:0 -608px}.HOL>a:before{background-position:-38px -608px}.BEL>a:before{background-position:-76px -608px}.OLIM>a:before{background-position:0 -646px}.SUPERCUP>a:before{background-position:-38px -646px}.NONE3>a:before{background-position:-74 -645px}.REC>a:before{background-position:-74 -645px}.NONE6>a:before{background-position:-74 -645px}.AFC>a:before{background-position:-38px -494px}.menu>li>a span{font-size:.95em;display:inline-block;position:absolute;left:.3em;top:50%;background:#fff;line-height:1em;height:1em;padding:.3em .6em;margin:-.8em 0 0;color:#222d36;text-indent:0;text-align:center;-webkit-border-radius:.769em;-moz-border-radius:.769em;border-radius:.569em;-webkit-box-shadow:inset 0 1px 3px 0 rgba(0,0,0,.16),0 1px 0 0 rgba(63,68,74,.1);-moz-box-shadow:inset 0 1px 3px 0 rgba(0,0,0,.16),0 1px 0 0 rgba(63,68,74,.1);box-shadow:inset 0 1px 3px 0 rgba(0,0,0,.16),0 1px 0 0 rgba(63,68,74,.1);text-shadow:0 1px 0 rgba(0,0,0,.5);font-weight:500}.menu>li>a:hover span,.menu>li a.active span{background:404040}.menu>li>ul li a:before{content:'►';font-size:9px;color:#789;position:absolute;width:1em;height:1em;top:0;left:-2.7em}.menu>li>ul li:hover a,.menu>li>ul li:hover a span,.menu>li>ul li:hover a:before{color:#2e9afe}.menu ul>li>a span{font-size:.857em;display:inline-block;position:absolute;right:1em;top:50%;/background:#fff;border:1px solid #d0d0d3;line-height:1em;height:1em;padding:.4em .7em;margin:-.9em 0 0;color:#000;text-indent:0;text-align:center;-webkit-border-radius:.769em;-moz-border-radius:769em;border-radius:769em;text-shadow:0 0 0 rgba(255,255,255,.01))}div.sombreada_css3{background-color:#3069db;width:100%px;padding:12px;color:#039;box-shadow:0 1px 1px #333;-webkit-box-shadow:0 1px 1px #333;-moz-box-shadow:0 1px 1px #333}}*/
+            /*@charset "UTF-8"; body{ font-size: 100%;background:}a {text-decoration: none}ul,ul ul {margin: 0;padding: 0;list-style: none}#wraper {width: 100%;margin: 0 auto;font-size: .8125em}.menu {width: auto;height: auto;-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .73), 0 0 18px 0 rgba(0, 0, 0, .1);-moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .73), 0 0 18px 0 rgba(0, 0, 0, .1);box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .73), 0 0 18px 0 rgba(0, 0, 0, .1)}.menu>li>a { background-color:#000000;background-image:-webkit-gradient(linear,left top,left bottom,from(rgb(255, 255, 255)),to(rgb(80, 88, 100)));background-image:-webkit-linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));background-image:-moz-linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));background-image:-o-linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));background-image:-ms-linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));background-image:linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#727a86',EndColorStr='#505864'); border-bottom: 0 solid #33373d;-webkit-box-shadow: inset 0 1px 0 0 #878e98;-moz-box-shadow: inset 0 1px 0 0 #878e98;box-shadow: inset 0 1px 0 0 #878e98;width: 100%;height: 2.8em;line-height: 2.8em;text-indent: 7.9em;display: block;position: relative;font-family: arial, Arial, Helvetica, sans-serif;font-weight: 600;color: #404040;font-size: 1em;text-shadow: 0 
+            0 0 #000}.menu ul li a {background: #fff;border-bottom: 1px solid #efeff0;width: 100%;height: 2.8em;line-height: 2.8em;text-indent: 3.75em;display: block;position: relative;font-family: arial, Arial, Helvetica, sans-serif;font-size: 1em;font-weight: 500;color: #789}.menu ul li:last-child a {border-bottom: 1px solid #33373d}.menu>li>a:hover,.menu>li>a.active{background-color:#2d2d30;background-image:-webkit-gradient(linear,lefttop,left bottom,from(rgb(128,128,128)),to(rgb(128,128,128)));background-image:-webkit-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:-moz-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:-o-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:-ms-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:linear-gradient(top,rgb(199,197,197),rgb(218,214,214)); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#606060', EndColorStr='#202020');border-bottom: 1px solid #404040; -webkit-box-shadow: inset 0 1px 0 0 #404040;-moz-box-shadow: inset 0 1px 0 0 #404040;box-shadow: inset 0 1px 0 0 #404040}.menu>li>a.active {border-bottom: 0 solid #404040}@media only screen and (max-width: 600px) {.menu > li > a:before {left: 22px;}}.menu > li > 
+            a:before {content: '';background-repeat: no-repeat;background-size: contain; background-position: center;font-size: 36px;height: 0.8em;width: 1.7em;position: absolute;left: 42px;top: 50%;margin: -.45em 0 0;} .menu>li>a span {font-size: .95em;display: inline-block;position: absolute;left: .3em;top: 50%;background: #fff;line-height: 1em;height: 1em;padding: .3em .6em;margin: -.8em 0 0;color: #222d36;text-indent: 0;text-align: 
+            center;-webkit-border-radius: .769em;-moz-border-radius: .769em;border-radius: .569em; -webkit-box-shadow: 
+            inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);-moz-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);text-shadow: 0 1px 0 rgba(0, 0, 0, .5); font-weight: 500}.menu>li>a:hover span,.menu>li a.active span {background: 404040}.menu>li>ul li a:before {content: '►';font-size: 9px;color: #789; position: absolute;width: 1em;height: 1em;top: 0;left: -2.7em}.menu>li>ul li:hover a,.menu>li>ul li:hover a 
+            span,.menu>li>ul li:hover a:before { color: #2e9afe}.menu ul>li>a span {font-size: .857em;display: inline-block;position: absolute;right: 1em;top: 50%;background: #fff;border: 1px solid #d0d0d3;line-height: 1em;height: 1em;padding: 0.4em 0.7em;margin: -0.9em 0 0;color: #000;text-indent: 0;text-align: center;-webkit-border-radius: 0.769em;-moz-border-radius: 769em;border-radius: 769em;text-shadow: 0 0 0 rgba(255,255,255,.01);} div.sombreada_css3 {background-color: #282828;width: 100%px;padding: 12px;color: #002399;box-shadow: 0px 
+            1px 1px #333;-webkit-box-shadow: 0px 1px 1px #333; -moz-box-shadow: 0px 1px 1px #333;}*/
+            @charset "UTF-8"; body{font-size: 100%;background: #fff}a {text-decoration: none}ul,ul ul {margin: 0;padding: 0;list-style: none}#wraper {width: 100%;margin: 0 auto;font-size: .8125em}.menu {width: auto;height: auto;-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .73), 0 0 18px 0 rgba(0, 0, 0, .1);-moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .73), 0 0 18px 0 rgba(0, 0, 0, .1);box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .73), 0 0 18px 0 rgba(0, 0, 0, .1)}.menu>li>a { background-color: #000;background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(148, 204, 124))); background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255));background-image: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255));background-image: -o-linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255));background-image: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255));background-image: linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255)); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#727a86', EndColorStr='#505864'); border-bottom: 0 solid #33373d;-webkit-box-shadow: inset 0 1px 0 0 #878e98;-moz-box-shadow: inset 0 1px 0 0 #878e98;box-shadow: inset 0 1px 0 0 #878e98;width: 100%;height: 2.8em;line-height: 2.8em;text-indent: 7.9em;display: block;position: relative;font-family: arial, Arial, Helvetica, sans-serif;font-weight: 600;color: #404040;font-size: 1em;text-shadow: 0 
+                                                                                                                                                                                                        0 0 #000}.menu ul li a {background: #fff;border-bottom: 1px solid #efeff0;width: 100%;height: 2.8em;line-height: 2.8em;text-indent: 3.75em;display: block;position: relative;font-family: arial, Arial, Helvetica, sans-serif;font-size: 1em;font-weight: 500;color: #789}.menu ul li:last-child a {border-bottom: 1px solid #33373d}.menu>li>a:hover,.menu>li>a.active{background-color:#2d2d30;background-image:-webkit-gradient(linear,lefttop,left bottom,from(rgb(128,128,128)),to(rgb(128,128,128)));background-image:-webkit-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:-moz-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:-o-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:-ms-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:linear-gradient(top,rgb(199,197,197),rgb(218,214,214)); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#606060', EndColorStr='#202020');border-bottom: 1px solid #404040; -webkit-box-shadow: inset 0 1px 0 0 #404040;-moz-box-shadow: inset 0 1px 0 0 #404040;box-shadow: inset 0 1px 0 0 #404040}.menu>li>a.active {border-bottom: 0 solid #404040}@media only screen and (max-width: 600px) {.menu > li > a:before {left: 22px;}}.menu > li > 
+            a:before {content: '';background-repeat: no-repeat;background-size: contain; background-position: center;font-size: 36px;height: 0.8em;width: 1.7em;position: absolute;left: 50px;top: 50%;margin: -.45em 0 0;} .menu>li>a span {font-size: .95em;display: inline-block;position: absolute;left: .3em;top: 50%;background: #fff;line-height: 1em;height: 1em;padding: .3em .6em;margin: -.8em 0 0;color: #222d36;text-indent: 0;text-align: 
+                                                                                                                                                                                                        center;-webkit-border-radius: .769em;-moz-border-radius: .769em;border-radius: .569em; -webkit-box-shadow: 
+                                                                                                                                                                                                        inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);-moz-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);text-shadow: 0 1px 0 rgba(0, 0, 0, .5); font-weight: 500}.menu>li>a:hover span,.menu>li a.active span {background: 404040}.menu>li>ul li a:before {content: '\25BA';font-size: 9px;color: #000000; position: absolute;width: 1em;height: 1em;top: 0;left: -2.7em}.menu>li>ul li:hover a,.menu>li>ul li:hover a 
+            span,.menu>li>ul li:hover a:before { color: #2e9afe}.menu ul>li>a span {font-size: .857em;display: inline-block;position: absolute;right: 1em;top: 50%;background: #fff;border: 2px solid #000000;line-height: 1em;height: 1em;padding: 0.4em 0.7em;margin: -0.9em 0 0;color: #000;text-indent: 0;text-align: center;-webkit-border-radius: 0.769em;-moz-border-radius: 769em;border-radius: 769em;text-shadow: 0 0 0 rgba(255,255,255,.01);} div.sombreada_css3 {background-color: #5cb85c;width: 100%px;padding: 12px;color: #002399;box-shadow: 0px 
+                                                                                                                                                                                                        1px 1px #333;-webkit-box-shadow: 0px 1px 1px #333; -moz-box-shadow: 0px 1px 1px #333;}
 
-.player-poster[data-poster] {
-  background-size: cover;
-}
-body{
-  margin:0;
-  padding:0;
-}
+            .TUR > a:before {
+                background-image: url(/logo/tr.png);
+            }
 
-</style>
-</head>
-<div id="player"></div>
-<script>
-var player = new Clappr.Player({
-        source: 'https://tvup-ccs-live.akamaized.net/directvsportpan/directvsportpan.mpd',
-        mimeType: 'application/dash+xml',
-        height: '100%',
-        width: '100%',
-        plugins: [LevelSelector, DashShakaPlayback, ChromecastPlugin, ClapprPip.PipButton, ClapprPip.PipPlugin, Clappr.MediaControl],
-        events: {onReady: function() {var plugin = this.getPlugin('click_to_pause'); plugin && plugin.disable();},},
-        chromecast: {
-            appId: '9DFB77C0',
-            contentType: 'video/mp4',
-        },
-        shakaConfiguration: {
-            drm: {
-            clearKeys: {
-'62d2ca5933eb52b3b87b8e6f9fa3b4b9':'7ae1d2d47647056317b962e6655e5a5a',
-                    '4d633a3fe85a51a18fa33f189f96119d':'abe15d963a3084d2408a9a84e3942c97',
-                    'cf58333b25a357f19fccef66b10c4cce':'ddba67eb00f3b0e05133c924b30fd69c'
+            .ENG > a:before {
+                background-image: url(/logo/en.png);
+            }
+            .ALE > a:before {
+                background-image: url(/logo/de.png);
+            }
+            .FRA > a:before {
+                background-image: url(/logo/fr.png);
+            }
+            .HOL > a:before {
+                background-image: url(/logo/nl.png);
+            }
+            .POR > a:before {
+                background-image: url(/logo/pt.png);
+            }
+            .MEX > a:before {
+                background-image: url(/logo/mx.png);
+            }
+            .ES > a:before {
+                background-image: url(/logo/es.png);
+            }
+            .IT > a:before {
+                background-image: url(/logo/it.png);
+            }
+            .BEL > a:before {
+                background-image: url(/logo/be.png);
+            }
+            .CR > a:before {
+                background-image: url(/logo/cr.png);
+            }
+            .ESC > a:before {
+                background-image: url(/logo/sx.png);
+            }
+            .USA > a:before {
+                background-image: url(/logo/us.png);
+            }
+            .FUT > a:before {
+                background-image: url(/logo/futnewss.png);
+            }
+            .CHA > a:before {
+                background-image: url(/logo/champions.png);
+            }
+            .UE > a:before {
+                background-image: url(/logo/ue.png);
+            }
+            .COL > a:before {
+                background-image: url(/logo/co.png);
+            }
+            .CHI > a:before {
+                background-image: url(/logo/cl.png);
+            }
+            .ECUA > a:before {
+                background-image: url(/logo/ec.png);
+            }
+            .PE > a:before {
+                background-image: url(/logo/pe.png);
+            }
+            .AR > a:before {
+                background-image: url(/logo/ar.png);
+            }
+            .FIFA > a:before {
+                background-image: url(/logo/fifa.png);
+            }
+            .BRA > a:before {
+                background-image: url(/logo/br.png);
+            }
+            .URU > a:before {
+                background-image: url(/logo/uy.png);
+            }
+            .LIB > a:before {
+                background-image: url(/logo/libertadores.png);
+            }
+            .SUD > a:before {
+                background-image: url(/logo/sud.png);
+            }
+            .UEC > a:before {
+                background-image: url(/logo/uec.png);
+            }
+            .AMERICA> a:before {
+                background-image: url(/logo/copaamerica.png);
+            }
+            .F1 > a:before {
+                background-image: url(/logo/f-1.png);
+            }
+            .F2 > a:before {
+                background-image: url(/logo/f2.png);
+            }
+            .F3 > a:before {
+                background-image: url(/logo/f3.png);
+            }
+            .WWE > a:before {
+                background-image: url(/logo/wwenew.png);
+            }
+            .NBA > a:before {
+                background-image: url(/logo/nbanew2.png);
+            }
+            .NHL > a:before {
+                background-image: url(/logo/nhlnew3.png);
+            }
+            .UFC > a:before {
+                background-image: url(/logo/ufc.png);
+            }
+            .EURO > a:before {
+                background-image: url(/logo/eurocopa.png);
+            }
+            .EUROF > a:before {
+                background-image: url(/logo/eurocopaf.png);
+            }
+            .EUROFEM > a:before {
+                background-image: url(/logo/eurowomens.png);
+            }
+            .ARA > a:before {
+                background-image: url(/logo/sa.png);
+            }
+            .KL > a:before {
+                background-image: url(https://i.ibb.co/8sWH03z/kl.png);
+            }
+            .AFCCUP > a:before {
+                background-image: url(/logo/afccup.png);
+            }
+            .AEW> a:before {
+                background-image: url(/logo/aew.png);
+            }
+            .ATP > a:before {
+                background-image: url(/logo/atp.png);
+            }
+            .HANDBALL > a:before {
+                background-image: url(/logo/han.png);
+            }
+            .AFRICA > a:before {
+                background-image: url(/logo/africa.png);
+            }
+            .ENDESA > a:before {
+                background-image: url(/logo/endesa.png);
+            }
+            .NFL > a:before {
+                background-image: url(/logo/nfl.png);
+            }
+            .OSCARS > a:before {
+                background-image: url(https://i.ibb.co/ckDCJ9z/oscars.png);
+            }
+            .BOX > a:before {
+                background-image: url(/logo/boxeo.png);
+            }
+            .POL > a:before {
+                background-image: url(/logo/pol.png);
+            }
+            .LIB20 > a:before {
+                background-image: url(/logo/lib20.png);
+            }
+            .LVBP > a:before {
+                background-image: url(/logo/lvbp.png);
+            }
+            .OLIM > a:before {
+                background-image: url(/logo/olimpico.png);
+            }
+            .SDC > a:before {
+                background-image: url(/logo/sdc.png);
+            }
+            .PAR > a:before {
+                background-image: url(/logo/paraguay.png);
+            }
+            .UYL > a:before {
+                background-image: url(/logo/uyl.png);
+            }
+            .CONCACAFU20 > a:before {
+                background-image: url(/logo/u20.png);
+            }
+            .CICLISMO > a:before {
+                background-image: url(/logo/ciclismo.png);
+            }
+            .FUTSAL > a:before {
+                background-image: url(/logo/futsal.png);
+            }
+            .MLB > a:before {
+                background-image: url(/logo/mlbnew.png);
+            }
+            .RUG > a:before {
+                background-image: url(/logo/rugby.png);
+            }
+            .MOTOGP > a:before {
+                background-image: url(/logo/motogp.png);
+            }
+            .INDYCAR > a:before {
+                background-image: url(/logo/indycar.png);
+            }
+            .NATIONS > a:before {
+                background-image: url(/logo/nations.png);
+            }
+            .SUD-17F > a:before {
+                background-image: url(/logo/suda17fm.png);
+            }
+            .LCC > a:before {
+                background-image: url(/logo/lcc.png);
+            }
+            .AFC > a:before {
+                background-image: url(/logo/afc.png);
+            }
+            .MFP > a:before {
+                background-image: url(/logo/mundialfp.png);
+            }
+            .CONCACAFCUP > a:before {
+                background-image: url(/logo/concacafcups.png);
+            }
+            .RECOPASUD > a:before {
+                background-image: url(/logo/recopa.png);
+            }
+            .AMERICUP > a:before {
+                background-image: url(/logo/americup.png);
+            }
+            .RU > a:before {
+                background-image: url(/logo/ru.png);
+            }
+            .WTA > a:before {
+                background-image: url(/logo/wta.webp);
+            }
+            .SUD-20F > a:before {
+                background-image: url(/logo/sud20.png);
+            }
+            .GT > a:before {
+                background-image: url(/logo/guatemala.png);
+            }
+            .VEN > a:before {
+                background-image: url(/logo/ven.png);
+            }
+            .COSQUIN > a:before {
+                background-image: url(/logo/cosquin.png);
+            }
+
+            .RUGBY > a:before {
+                background-image: url(/logo/rugby-union.webp);
+            }
+            .CONCACAFNATIONS > a:before {
+                background-image: url(/logo/concacafnations.png);
+            }
+            .VNL > a:before {
+                background-image: url(/logo/vnl.png);
+            }
+            .EUROPA-SUB17 > a:before{
+                background-image:url(/logo/europa-sub17.png);
+            }
+            .ELIAFC > a:before {
+                background-image: url(/logo/eliafc.png);
+            }
+
+            /* Ajustes Personalizados*/
+
+
+
+            .menu > li.LMB > a:before {
+                background-image: url(/logo/lmb.png);
+                background-repeat: no-repeat;
+                background-size: contain; 
+                background-position: center; 
+                font-size: 36px;
+                height: 0.9em; 
+                width: 2em;
+                position: absolute;
+                left: 45px;
+                top: 55%;
+                margin: -.5em 0 0; 
+            }
+            @media only screen and (max-width: 600px) {
+                body {
+                    font-size: 70%;
                 }
-            },
-            preferredAudioLanguage: 'pt-BR',
-        },
-        shakaOnBeforeLoad: function (shaka_player) {},
-        parentId: '#player'
-    });
-</script>
+
+                .menu > li > a:before {
+                    height: 0.91em; 
+                    width: 0.50em;
+                }.menu > li.LMB > a:before {
+
+                    height: 0.95em; 
+                    width: 0.6em;
+                    left: 48px;
+                }
+
+            }
+            /*FIN*/
+
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJNJTFQRY0"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-KJNJTFQRY0');
+        </script>
+    </head>
+    <body link='#547484' onload='guardaHorario();
+            dT();' vlink='#547484' ondragstart="return false" ondrop="return false" onselectstart="return false" oncontextmenu="return false">
+        <div id="wraper">
+            <ul class="menu">
+
+
+
+
+                <!--  <li class="CAR"><a href="#">
+                              24 Horas de Le Mans: Carrera
+                              <span class="t">04:00</span></a>
+                          <ul>
+                              <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=L2VtYmVkL2p3bTMvP2dldD1hSFIwY0hNNkx5OWphR0Z1Ym1Wc0xUazJPV0l5WVRabU5qZGlOamt4WVRVdWJHbDJaUzV6Y0c5eWRHRnNiQzV0WldScFlTOVBSRWt4Tm1GV1UySjBOVlF1WlhsS2FHSkhZMmxQYVVwSlZYcEpNVTVwU1hOSmJsSTFZME5KTmtscmNGaFdRMGx6U1cxMGNGcERTVFpKYWtsM1RXcE5kMDlVU1RSWWVrVTBXWHBCTlU1cVFYZFBSRkpwV1RKR2JGcEhTWHBhUkZreVNXNHdMbVY1U25CalEwazJXbTFHYzJNeVZYTkpiVTUyU1dwd2JWbFhlSHBhVTNkcFdUTlNOVWxxY0cxWlYzaDZXbE4zYVdOdFZtNUphbkJ0V1ZkNGVscFRkMmxqTTA1MVNXcHdNR051Vm14TVEwcHNaVWhCYVU5cVJUTk5WR2N5VDFSbk1FOUVXWE5KYldoc1dWZFNiR051VFdsUGJIUmtURU5LZUdONVNUWlhNVEJ6U1cxc2RXUklUbkJhZVVrMlNXcHNkbHBIUmpKVlNGcFhVak5DYkUxdFdubGpSMDVWV2xjMWIxWXdWVFZPYTNCdVYyMXdkbHBFUms1Uk1rNDJXbmt4TUdORldYUk5iVGhwVEVOS2QxbFlVbTlqZVVrMlYzbEpkbUl6VmpCTU0xbDRUREpOTUUxNlRYcE9lazV0VFZSQ2EwOUVVbXRaYW1NMFQwUk9iRTU2UVROT2VrMTVUMVJqTkZwcVVUUk1lVXBrVEVOS2JHVkhUV2xQYkhOcFRETlNkRXg1U21STVEwcDFXVzFaYVU5cVJUSk9SRlYzVFVSQmQwMUVRWE5KYld4b1pFTkpOazFVWTNoUFJGVjVUbFJaTkU1dU1DNU9URlUxYTFWZk5YbHphbGxQZGtWSWJFcENVRGxCZFZaWFFVbFNkVU5FWTJodlpHODFWVEZSYWxCUkwyOTFkQzkyTVM5ak5ETXpNemN6WmpFd1pEZzBaR0kzT0RnelpUY3dOemN6TWprM09HWTBPQzlwYm1SbGVDNXRNM1U0UDNSdmEyVnVQVFEwT1RRd056azVKbk4wWVhKMFBURTNNVGcwT0RJMU1qWT0=" target="_blank">TV (Sin Comentarios)<span>Calidad 720p</span></a></li>
+                              <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=L2VtYmVkL2p3bTMvP2dldD1hSFIwY0hNNkx5OWphR0Z1Ym1Wc0xUSmlNMkkwTmprMU1HTTNNRGxoTVdRdWJHbDJaUzV6Y0c5eWRHRnNiQzV0WldScFlTOW1hMUJUUkRRM01sZDZhMjh1WlhsS2FHSkhZMmxQYVVwSlZYcEpNVTVwU1hOSmJsSTFZME5KTmtscmNGaFdRMGx6U1cxMGNGcERTVFpKYWtsM1RXcE5kMDlVU1RSWWVrVTBXWHBCTlU1cVFYZFBSRkpwV1RKR2JGcEhTWHBhUkZreVNXNHdMbVY1U25CalEwazJXbTFHYzJNeVZYTkpiVTUyU1dwd2JWbFhlSHBhVTNkcFdUTlNOVWxxY0cxWlYzaDZXbE4zYVdOdFZtNUphbkJ0V1ZkNGVscFRkMmxqTTA1MVNXcHdNR051Vm14TVEwcHNaVWhCYVU5cVJUTk5WR2N5VDFSbk1VNTZVWE5KYldoc1dWZFNiR051VFdsUGJIUmtURU5LZUdONVNUWlhNVEJ6U1cxc2RXUklUbkJhZVVrMlNXdFNiMDVyZEdaTVYxSlRVVmhzZGsxV1dsRlphbWhwWW5wb2RGZEVRbVpVUjBweFVqQjRVR1JWVlhwbFNHaElUVVpLUTFWR2NHeFNiVGhwVEVOS2QxbFlVbTlqZVVrMlYzbEpkbUl6VmpCTU0xbDRUREpWTlUxWFdYcFBSRlV4VGxSR2FFOUVVbWxhYW14cFRWUm9iVTU2YUdoYWFtY3hUbGRTYkZsNlFUUk1lVXBrVEVOS2JHVkhUV2xQYkhOcFRETlNkRXg1U21STVEwcDFXVzFaYVU5cVJUSk9SRlYzVFVSQmQwMUVRWE5KYld4b1pFTkpOazFVWTNoUFJGVjVUbFJqTTA1SU1DNWpVbk5HTVRKS09FaFRNRTlwWld4cVkzTkZUMFJuUTA1VVlsTk9jMDV4VW01R2NrWjRUbE42Ym5CUkwyOTFkQzkyTVM5bE9URm1NemcxTlRVeFlUZzBZbVk1WWpFNFpqYzRZV1k0TlRWa1pXTXdPQzlwYm1SbGVDNXRNM1U0UDNSdmEyVnVQVGd4T0RRd09Ua3lKbk4wWVhKMFBURTNNVGcxTURRek9EQT0=" target="_blank">TV (English/Ingles)<span>Calidad 720p</span></a></li>
+                              <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=L2VtYmVkL2p3bTMvP2dldD1hSFIwY0hNNkx5OWphR0Z1Ym1Wc0xUazJPV0l5WVRabU5qZGlOamt4WVRVdWJHbDJaUzV6Y0c5eWRHRnNiQzV0WldScFlTOVBSRWt4Tm1GV1UySjBOVlF1WlhsS2FHSkhZMmxQYVVwSlZYcEpNVTVwU1hOSmJsSTFZME5KTmtscmNGaFdRMGx6U1cxMGNGcERTVFpKYWtsM1RXcE5kMDlVU1RSWWVrVTBXWHBCTlU1cVFYZFBSRkpwV1RKR2JGcEhTWHBhUkZreVNXNHdMbVY1U25CalEwazJXbTFHYzJNeVZYTkpiVTUyU1dwd2JWbFhlSHBhVTNkcFdUTlNOVWxxY0cxWlYzaDZXbE4zYVdOdFZtNUphbkJ0V1ZkNGVscFRkMmxqTTA1MVNXcHdNR051Vm14TVEwcHNaVWhCYVU5cVJUTk5WR2N5VDFSbk1FOUVXWE5KYldoc1dWZFNiR051VFdsUGJIUmtURU5LZUdONVNUWlhNVEJ6U1cxc2RXUklUbkJhZVVrMlNXcHNkbHBIUmpKVlNGcFhVak5DYkUxdFdubGpSMDVWV2xjMWIxWXdWVFZPYTNCdVYyMXdkbHBFUms1Uk1rNDJXbmt4TUdORldYUk5iVGhwVEVOS2QxbFlVbTlqZVVrMlYzbEpkbUl6VmpCTU0xbDRUREpOTUUxNlRYcE9lazV0VFZSQ2EwOUVVbXRaYW1NMFQwUk9iRTU2UVROT2VrMTVUMVJqTkZwcVVUUk1lVXBrVEVOS2JHVkhUV2xQYkhOcFRETlNkRXg1U21STVEwcDFXVzFaYVU5cVJUSk9SRlYzVFVSQmQwMUVRWE5KYld4b1pFTkpOazFVWTNoUFJGVjVUbFJaTkU1dU1DNU9URlUxYTFWZk5YbHphbGxQZGtWSWJFcENVRGxCZFZaWFFVbFNkVU5FWTJodlpHODFWVEZSYWxCUkwyOTFkQzkyTVM5ak5ETXpNemN6WmpFd1pEZzBaR0kzT0RnelpUY3dOemN6TWprM09HWTBPQzlwYm1SbGVDNXRNM1U0UDNSdmEyVnVQVFEwT1RRd056azVKbk4wWVhKMFBURTNNVGcwT0RJMU1qWT0=" target="_blank">TV (French/Frances - Speaker circuit)<span>Calidad 720p</span></a></li>
+                          </ul>
+                      </li>	-->
+
+                <center><div class="sombreada_css3"><font size="2" face="Helvetica Neue,Helvetica,Arial,sans-serif" color="#FFFFFF">
+                        <b>Agenda deportiva del día Sábado 22 de junio de 2024</b>
+                        </font></div></center>
+                <li class="F3"><a href="#">
+                        F3 | GP de España: Sprint
+                        <span class="t">09:35</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=REFaTl9GMQ==" target="_blank">Dazn F1 ES<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U1NDMg==" target="_blank">SSC Sport 2 SA<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="F1"><a href="#">
+                        F1 | GP de España: Prácticas #3
+                        <span class="t">11:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/fox-sports" target="_blank"><b>Fox Sports AR</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/fox-sports-premium-mx" target="_blank"><b>Fox Sports Premium MX</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=REFaTl9GMQ==" target="_blank">Dazn F1 ES<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U1NDMg==" target="_blank">SSC Sport 2 SA<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="VNL"><a href="#">
+                        Voley Nations League: Bulgaria vs. Argentina
+                        <span class="t">11:56</span></a>
+                    <ul>
+
+                    </ul>
+                </li>
+
+                <li class="F2"><a href="#">
+                        F2 | GP de España: Sprint
+                        <span class="t">13:05</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=REFaTl9GMQ==" target="_blank">Dazn F1 ES<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U1NDMg==" target="_blank">SSC Sport 2 SA<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="EURO"><a href="#">
+                        Eurocopa: Georgia vs. República Checa
+                        <span class="t">14:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/star1?r=" target="_blank">Star+ (<i style="color:red">Solo PC - Usar Extensión VideoPlayer MPD/M3U8/M3U/EPG. Funciona en Chrome y Brave</i>)<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn" target="_blank"><b>Espn AR</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbnBl" target="_blank">Espn(<i style="color:red">Global - Disponible para iPhone</i>)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbmVj" target="_blank">Espn EC(VPN/EC)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbnB5" target="_blank">Espn PY(VPN/AR-PY)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbmNs" target="_blank">Espn CL(VPN/CL)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="ttps://pelotalibre.online/embed/eventos?r=L2VtYmVkL2dvLz9yPVpYVnliM05yZVRFPQ==" target="_blank">UEFA Euro Sky 1 (VPN/México)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="ttps://pelotalibre.online/embed/opcp1?r=bGEy" target="_blank">TVE LA 2 ES Op1<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=VFZMQTJFUw==" target="_blank">TVE LA 2 ES Op2<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/canal-5" target="_blank"><b>Canal 5</b><span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=SVRWMVVL" target="_blank">ITV 1 UK<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="ttps://pelotalibre.online/embed/opcp1?r=c2t5c3BvcnRzMjUxaXQ=" target="_blank">Sky Sports 251 IT<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="ttps://pelotalibre.online/embed/opcp1?r=c2t5c3BvcnRjYWxjaW9pdA==" target="_blank">Sky Sport Calcio IT<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U0tZU1BPUlRVTk9JVA==" target="_blank">Sky Sport Uno IT<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=Q1RTUE9SVFNDWg==" target="_blank">ČT Sport CZ<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=WkRGREU=" target="_blank">ZDF DE<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=TEFVTkVCRQ==" target="_blank">La Une Be<span>Calidad 720p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=SFJUMg==" target="_blank">HRT2 BE<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=VElQSUtCRQ==" target="_blank">Tipik BE<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=REFTRVJTVEU" target="_blank">Das Erste DE<span>Calidad 720p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=TlJLMU5P" target="_blank">NRK1 NO<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=QkJDMUVORw==" target="_blank">BBC One GB<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=UlRMREU=" target="_blank">RTL DE<span>Calidad 720p</span></a></li>
+
+                    </ul>
+                </li>
+
+                <li class="URU"><a href="#">
+                        Primera División: Cerro vs. Danubio
+                        <span class="t">14:00</span></a>
+                    <ul>
+
+                    </ul>
+                </li>
+
+                <li class="F1"><a href="#">
+                        F1 | GP de España: Clasificación
+                        <span class="t">11:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/fox-sports" target="_blank"><b>Fox Sports AR</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/fox-sports-premium-mx" target="_blank"><b>Fox Sports Premium MX</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=REFaTl9GMQ==" target="_blank">Dazn F1 ES<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U1NDMg==" target="_blank">SSC Sport 2 SA<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="URU"><a href="#">
+                        Primera División: Deportivo Maldonado vs. Fénix
+                        <span class="t">16:30</span></a>
+                    <ul>
+
+                    </ul>
+                </li>
+
+                <li class="EURO"><a href="#">
+                        Eurocopa: Turquía vs. Portugal
+                        <span class="t">17:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/star1?r=" target="_blank">Star+ (<i style="color:red">Solo PC - Usar Extensión VideoPlayer MPD/M3U8/M3U/EPG. Funciona en Chrome y Brave</i>)<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn" target="_blank"><b>Espn AR</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbnBl" target="_blank">Espn(<i style="color:red">Global - Disponible para iPhone</i>)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbmVj" target="_blank">Espn EC(VPN/EC)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbnB5" target="_blank">Espn PY(VPN/AR-PY)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbmNs" target="_blank">Espn CL(VPN/CL)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="ttps://pelotalibre.online/embed/eventos?r=L2VtYmVkL2dvLz9yPVpYVnliM05yZVRFPQ==" target="_blank">UEFA Euro Sky 1 (VPN/México)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="ttps://pelotalibre.online/embed/opcp1?r=bGEx" target="_blank">TVE LA 1 ES Op1<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=VFZMQTFFUw==" target="_blank">TVE LA 1 ES Op2<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=SVRWMVVL" target="_blank">ITV 1 UK<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="ttps://pelotalibre.online/embed/opcp1?r=c2t5c3BvcnRzMjUxaXQ=" target="_blank">Sky Sports 251 IT<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="ttps://pelotalibre.online/embed/opcp1?r=c2t5c3BvcnRjYWxjaW9pdA==" target="_blank">Sky Sport Calcio IT<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U0tZU1BPUlRVTk9JVA==" target="_blank">Sky Sport Uno IT<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=Q1RTUE9SVFNDWg==" target="_blank">ČT Sport CZ<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="  https://pelotalibre.online/embed/opcp2?r=VFYyTk8" target="_blank">TV2 NO<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=WkRGREU=" target="_blank">ZDF DE<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=TEFVTkVCRQ==" target="_blank">La Une Be<span>Calidad 720p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=SFJUMg==" target="_blank">HRT2 BE<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=VElQSUtCRQ==" target="_blank">Tipik BE<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=REFTRVJTVEU" target="_blank">Das Erste DE<span>Calidad 720p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=QkJDMUVORw==" target="_blank">BBC One GB<span>Calidad 1080p</span></a></li>	
+
+                    </ul>
+                </li>
+
+                <li class="UFC"><a href="#">
+                        UFC: Robert Whittaker vs. Ikram Aliskerov
+                        <span class="t">17:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/fox-sports-premium-mx" target="_blank"><b>Fox Sports Premium MX</b><span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="URU"><a href="#">
+                        Primera División: Racing vs. Defensor Sporting
+                        <span class="t">19:00</span></a>
+                    <ul>
+
+                    </ul>
+                </li>
+
+                <li class="AR"><a href="#">
+                        Primera Nacional: Temperley vs. Quilmes
+                        <span class="t">19:15</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/tyc-sports" target="_blank"><b>Tyc Sports</b><span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="VNL"><a href="#">
+                        Voley Nations League: Eslovenia vs. Italia
+                        <span class="t">19:30</span></a>
+                    <ul>
+
+                    </ul>
+                </li>
+
+                <li class="EURO"><a href="#">
+                        Eurocopa: Bélgica vs. Rumania
+                        <span class="t">20:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/star1?r=" target="_blank">Star+ (<i style="color:red">Solo PC - Usar Extensión VideoPlayer MPD/M3U8/M3U/EPG. Funciona en Chrome y Brave</i>)<span>Calidad 720p</span></a></li>
+                        <!--                        <li class="subitem1"><a href="ttps://pelotalibre.online/embed/star1?r=Y2hyb21lLWV4dGVuc2lvbjovL29wbWVvcGNhbWJoZmltZmZib21qZ2VtZWhqa2JibWppL3BhZ2VzL3BsYXllci5odG1sI2h0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3ZhMDEvc3RhcnBsdXMvZXZlbnQvMjAyNC8wNi8yMS9OZXRoZXJsYW5kc192c19GcmFuY2VfMjAyNDA2MjFfMTcxODk5MDEwNzAxNS9jdHItYWxsLWNvbXBsZXRlLm0zdTg/JmNrPWV5STBZVE0yTldKaVpUZGlNVEkwTTJJeFlUaGxNR014TTJZd1pqWTROVGt5TnlJNkltTTJZV0l3TldJNU1ETXlaVGhtTUdSaE1EQmtNREE0Tm1SbU5UQTRaVGhrSW4wPQ==" target="_blank">Star+ (<i style="color:red">Solo PC - Usar Extensión VideoPlayer MPD/M3U8/M3U/EPG. Funciona en Chrome y Brave</i>)<span>Calidad 720p</span></a></li>-->
+                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn" target="_blank"><b>Espn AR</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbnBl" target="_blank">Espn(<i style="color:red">Global - Disponible para iPhone</i>)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbmVj" target="_blank">Espn EC(VPN/EC)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbnB5" target="_blank">Espn PY(VPN/AR-PY)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbmNs" target="_blank">Espn CL(VPN/CL)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="ttps://pelotalibre.online/embed/eventos?r=L2VtYmVkL2dvLz9yPVpYVnliM05yZVRFPQ==" target="_blank">UEFA Euro Sky 1 (VPN/México)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="ttps://pelotalibre.online/embed/opcp1?r=bGEx" target="_blank">TVE LA 1 ES Op1<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=VFZMQTFFUw==" target="_blank">TVE LA 1 ES Op2<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="ttps://pelotalibre.online/embed/eventos?r=L2VtYmVkL20zanc/Z2V0PS8vdGVsZWNvcnBvcmFjaW9uLWVzLmNkbi52dXN0cmVhbXMuY29tL2xpdmUvNjViNTJhMGEtNDE1ZC00Njg2LThlZjUtN2EwYjA3YjgzOTkyL2xpdmUuaXNtbC8ubTN1OA==" target="_blank">Canal 4 SV<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=SVRWMVVL" target="_blank">ITV 1 UK<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="ttps://pelotalibre.online/embed/opcp1?r=c2t5c3BvcnRzMjUxaXQ=" target="_blank">Sky Sports 251 IT<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="ttps://pelotalibre.online/embed/opcp1?r=c2t5c3BvcnRjYWxjaW9pdA==" target="_blank">Sky Sport Calcio IT<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U0tZU1BPUlRVTk9JVA==" target="_blank">Sky Sport Uno IT<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=Q1RTUE9SVFNDWg==" target="_blank">ČT Sport CZ<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=VFYyTk8" target="_blank">TV2 NO<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=WkRGREU=" target="_blank">ZDF DE<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=TEFVTkVCRQ==" target="_blank">La Une Be<span>Calidad 720p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=SFJUMg==" target="_blank">HRT2 BE<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=VElQSUtCRQ==" target="_blank">Tipik BE<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=REFTRVJTVEU" target="_blank">Das Erste DE<span>Calidad 720p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=UkFJMQ==" target="_blank">RAI 1 IT<span>Calidad 1080p</span></a></li>
+
+                    </ul>
+                </li>
+
+                <li class="BRA"><a href="#">
+                        Brasileirão: Criciúma vs. Botafogo
+                        <span class="t">20:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=cHJlbWllcmUx" target="_blank">Premiere BR<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+                <li class="BRA"><a href="#">
+                        Serie B: CRB vs. Guarani
+                        <span class="t">21:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=cHJlbWllcmUz" target="_blank">Premiere 3 BR<span>Calidad 720p</span></a></li>
+
+                    </ul>
+                </li>
+                <li class="BRA"><a href="#">
+                        Serie B: Operário PR vs. Botafogo SP	
+                        <span class="t">21:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=cHJlbWllcmU0" target="_blank">Premiere 4 BR<span>Calidad 720p</span></a></li>
+
+                    </ul>
+                </li>
+                <li class="BRA"><a href="#">
+                        Brasileirão: Grêmio vs. Internacional
+                        <span class="t">21:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=cHJlbWllcmUy" target="_blank">Premiere 2 BR<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="URU"><a href="#">
+                        Primera División: Progreso vs. Peñarol
+                        <span class="t">22:00</span></a>
+                    <ul>
+                    </ul>
+                </li>
+
+                <li class="BRA"><a href="#">
+                        Brasileirão: Cuiabá vs. Atlético Goianiense
+                        <span class="t">22:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=cHJlbWllcmUy" target="_blank">Premiere 2 BR<span>Calidad 720p</span></a></li>
+
+                    </ul>
+                </li>
+
+                <li class="AMERICA"><a href="#">
+                        Copa América: Ecuador vs. Venezuela
+                        <span class="t">23:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/dsports" target="_blank"><b>Dsports </b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/ecdf" target="_blank"><b>ECDF</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/ecdf" target="_blank"><b>ECDF(VPN/EC)</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc1?r=dGVsZXZlbg" target="_blank">Televen(VPN/VEN)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=L2VtYmVkL20zanc/Z2V0PS8vdGVsZWNvcnBvcmFjaW9uLWVzLmNkbi52dXN0cmVhbXMuY29tL2xpdmUvNjViNTJhMGEtNDE1ZC00Njg2LThlZjUtN2EwYjA3YjgzOTkyL2xpdmUuaXNtbC8ubTN1OA==" target="_blank">Canal 4 SV<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=L2VtYmVkL20zP2dldD0vL2Jjb3ZsaXZlLWEuYWthbWFpaGQubmV0Lzc0ZjY2NWU5ZmY4NDQ3NjM5ZDRkZTRiOGI0NThkOGFlL3VzLWVhc3QtMS82MDU4MDA0MjA5MDAxL3BsYXlsaXN0X2R2ci5tM3U4" target="_blank">TV MAX PA<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=L2VtYmVkL2p3bTMvP2dldD1MeTlqYURFdGRIWmhMbVIxYVc0dVpHVjJMMmhzY3k5emRISmxZVzB1YlROMU9BPT0=" target="_blank">Azteca Guatemala<span>Calidad 720p</span></a></li>
+
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=VlNQT1JUMV9OTw==" target="_blank">V Sport 1 NO(UE/VPN)<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=Ly90dWNhbmFsZGVwb3J0aXZvLmNvbS9lY2Z1dGJvbC5waHA=" target="_blank">ECDF(Ads)<span>Calidad SD</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=aHR0cHM6Ly9rZW1pcmFzLm9uZS90cmFuc21pY2lvbmVzLzcucGhw" target="_blank">ECDF(Op2)(Ads)<span>Calidad SD</span></a></li> 
+                    </ul>
+                </li>
+                <li class="BRA"><a href="#">
+                        Serie B: Ituano vs. Brusque
+                        <span class="t">01:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=cHJlbWllcmUy" target="_blank">Premiere 2 BR<span>Calidad 720p</span></a></li>
+
+                    </ul>
+                </li>
+                <li class="BRA"><a href="#">
+                        Brasileirão: Vasco da Gama vs. São Paulo
+                        <span class="t">01:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=cHJlbWllcmUx" target="_blank">Premiere BR<span>Calidad 720p</span></a></li>
+
+                    </ul>
+                </li>
+
+                <li class="AMERICA"><a href="#">
+                        Copa América: México vs. Jamaica
+                        <span class="t">02:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/dsports" target="_blank"><b>Dsports </b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/tudn" target="_blank"><b>TUDN MX</b><span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/canal-5" target="_blank"><b>Canal 5</b><span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/azteca-7" target="_blank"><b>Azteca 7</b><span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=L2VtYmVkL20zanc/Z2V0PS8vdGVsZWNvcnBvcmFjaW9uLWVzLmNkbi52dXN0cmVhbXMuY29tL2xpdmUvNjViNTJhMGEtNDE1ZC00Njg2LThlZjUtN2EwYjA3YjgzOTkyL2xpdmUuaXNtbC8ubTN1OA==" target="_blank">Canal 4 SV<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=L2VtYmVkL20zP2dldD0vL2Jjb3ZsaXZlLWEuYWthbWFpaGQubmV0Lzc0ZjY2NWU5ZmY4NDQ3NjM5ZDRkZTRiOGI0NThkOGFlL3VzLWVhc3QtMS82MDU4MDA0MjA5MDAxL3BsYXlsaXN0X2R2ci5tM3U4" target="_blank">TV MAX PA<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=L2VtYmVkL2p3bTMvP2dldD1MeTlqYURFdGRIWmhMbVIxYVc0dVpHVjJMMmhzY3k5emRISmxZVzB1YlROMU9BPT0=" target="_blank">Azteca Guatemala<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=VlNQT1JUMV9OTw==" target="_blank">V Sport 1 NO(UE/VPN)<span>Calidad 720p</span></a></li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+        <!--initiate accordion-->
+        <script type="text/javascript">
+            $(function () {
+
+                var menu_ul = $('.menu > li > ul'),
+                        menu_a = $('.menu > li > a');
+
+                menu_ul.hide();
+
+                menu_a.click(function (e) {
+                    e.preventDefault();
+                    if (!$(this).hasClass('active')) {
+                        menu_a.removeClass('active');
+                        menu_ul.filter(':visible').slideUp('fast');
+                        $(this).addClass('active').next().stop(true, true).slideDown('fast');
+                    } else {
+                        $(this).removeClass('active');
+                        $(this).next().stop(true, true).slideUp('fast');
+                    }
+                });
+
+            });
+        </script>
+
+        <br>
+
+        <!--    </div>-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTop.nav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+            if (window == window.top) {
+                window.location.replace("/");
+            }
+        </script>
+
+    </body>
+</html>
